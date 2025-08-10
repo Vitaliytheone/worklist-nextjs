@@ -1,15 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+import { Provider } from "@/components/ui/provider";
 
 export const metadata: Metadata = {
     title: "Worklist",
@@ -22,8 +13,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+        <html suppressHydrationWarning>
+            <body>
+                <Provider>{children}</Provider>
+            </body>
         </html>
     );
 }
