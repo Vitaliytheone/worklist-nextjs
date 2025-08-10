@@ -1,0 +1,37 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": ["typescript", "import", "unicorn", "nextjs"],
+    "categories": {
+        "correctness": "error",
+        "perf": "error"
+    },
+    "rules": {
+        "default-case": "error",
+        "no-alert": "error",
+        "no-empty": "error",
+        "no-regex-spaces": "warn",
+        "no-undefined": "error",
+        "no-unused-expressions": "error",
+        "no-var": "error",
+        "no-eq-null": "error",
+        "no-unreachable": "error",
+        "no-lone-blocks": "error",
+        "import/extensions": "error",
+        "import/no-cycle": "error",
+        "import/first": "error",
+        "import/no-duplicates": "error",
+        "react/button-has-type": "error",
+        "react/no-unknown-property": "error",
+        "typescript/no-import-type-side-effects": "error",
+        "typescript/no-non-null-assertion": "error",
+        "react/rules-of-hooks": "error",
+        "typescript/ban-types": "error",
+        "unicorn/explicit-length-check": "error",
+        "yoda": "error"
+    },
+    "overrides": [],
+    "settings": {},
+    "env": {},
+    "globals": {},
+    "ignorePatterns": [".next", "helm", "*.config.js", "*.config.ts"]
+}
