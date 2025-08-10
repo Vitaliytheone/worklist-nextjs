@@ -1,0 +1,20 @@
+{
+    "printWidth": 100,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "singleQuote": false,
+    "singleAttributePerLine": true,
+    "endOfLine": "lf",
+    "semi": true,
+    "importOrderSeparation": true,
+    "plugins": [
+        "@trivago/prettier-plugin-sort-imports"
+    ],
+    "importOrder": [
+        "^react(.*)$",
+        "^(?!~|./|../|@)(.*)$",
+        "^@/(.*)$",
+        "^../(.*)$",
+        "^./(.*)$"
+    ]
+}
